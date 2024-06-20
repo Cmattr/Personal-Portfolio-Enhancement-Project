@@ -1,0 +1,138 @@
+body
+{
+    background-image: url(profile.png);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header
+{
+    background-color: rgba(255, 255, 255, 0);
+    margin: 10px;
+    width: 95%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: 5px 5px 5px rgb(100, 100, 100);
+    padding: 5px;
+}
+
+main
+{
+    background-color: white;
+    margin: 30px;
+    border: 5px ridge slategray;
+}
+
+footer
+{
+    background-color: white;
+    margin: 30px;
+    border: 5px ridge slategray;
+    width: 95%;
+}
+
+button
+{
+
+    background-color: navy;
+    color: white;
+    margin: 3px;
+    border: 5px ridge white;
+    padding: 3px;
+}
+
+button:hover
+{
+    background-color: rgb(27, 27, 197);
+    color: white;
+    margin: 5px;
+    border: 7px ridge white;
+    transition: .5s;
+    animation: pulse 2s infinite;
+}
+
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+
+}
+
+.container1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container2
+{
+   display: inline-flex;
+   flex-direction: column;
+   padding: 10px;
+   width: 40%;
+   box-shadow: 15px 15px 15px rgb(100, 100, 100);
+}
+
+@media screen and (max-width: 980px)
+{
+    body
+    {
+        background-image: none;
+        background-color: rgb(210, 222, 235);
+    }
+}
+
+@media screen and (max-width: 980px)
+{
+    header
+    {
+        background-image: none;
+        background-color: rgb(210, 222, 235);
+    }
+}
+
+@media screen and (max-width: 980px)
+{
+    header
+    {
+background-color: rgb(222, 222, 233);
+margin: 20px;
+width: 95%;
+font-style: italic;
+background-image: url(profile.png);
+background-size: contain;
+background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 980px)
+{
+    footer
+    {   
+        background-color:rgba(255, 0, 0, 0);
+        margin: 30px;
+        width: 95%;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 980px)
+{
+    .container2
+    {
+        display: inline-flex;
+        flex-direction: column;
+     
+        width: 90%;
+    }
+}
+
+@keyframes pulse{
+    100% {transform: scale(1); }
+   50% {transform: scale(1.05); }
+   }

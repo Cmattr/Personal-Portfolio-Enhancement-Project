@@ -25,7 +25,7 @@ button
 {
     background-color: navy;
     color: white;
-    border: 5px ridge white;
+    border: 1px ridge white;
 }
 
 button:hover
@@ -34,7 +34,7 @@ button:hover
     color: white;
     margin: 5px;
     border: 7px ridge white;
-    transition: .5s;
+    transition: 1.0s;
     animation: pulse 2s infinite;
 }
  
